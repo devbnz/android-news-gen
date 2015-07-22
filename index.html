@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <!-- So much head -->
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="Create your own random headlines worthy of any issue of VICE." name="description">
+  <meta content="@devbnz" name="author">
+  <meta content="initial-scale=1.0" name="viewport">
+
+  <!-- I was fellated by a Liberian Transexual while sorting this annoying social bullshit -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@devbnz">
+  <meta name="twitter:creator" content="@devbnz">
+  <meta name="twitter:title" content="Android News headline generator">
+  <meta name="twitter:description" content="How some idiot made a shitty website and we all lost our jobs. Create your own random headlines worthy of any issue of Android.">
+  <meta name="twitter:image:src" content="http://vice.ddly.co/images/vice.png">
+  <meta property="og:title" content="Android News headline generator" />
+  <meta property="og:description" content= "How some idiot made a shitty website and we all lost our jobs. Create your own random headlines worthy of any issue of Android." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://android.bnz-power.com" />
+  <meta property="og:image" content="http://vice.ddly.co/images/vice-og.png" />
+  <meta property="og:site_name" content="Android News headline generator" />
+
+  <title>Android News headline generator</title>
+
+  <!-- Maggie Thatcher banned SVG icons during the mining crisis -->
+  <link rel="shortcut icon" href="images/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="images/icons/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="images/icons/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:800,400" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container clearfix">
+    <header class="top-header">
+      <!-- <img class="logo" src="images/vice-logo.png" title="Vice Magazine Headline Generator" alt="Vice Magazine Headline Generator" width="120" height="40">-->
+      <p>by <a href="http://twitter.com/deadlydizzle" onclick="trackOutboundLink('http://twitter.com/deadlydizzle'); return false;">@devbnz</a> + thanks to #franzi</p>
+    </header>
+
+    <article>
+      <header class="widget">
+        <h1 id="headline">Android News <br>Headline Generator</h1>
+      </header>
+
+      <form action="." id="vice" method="get" name="ddly" onsubmit="setHeadline(); return false;">
+        <input class="btn animated shake next" id="btn" type="submit" value="Give me some News" onClick="ga('send', 'event', 'button', 'click', 'headline-generator');">
+      </form>
+
+      <ul class="share clearfix">
+        <li>
+          <a href="#" rel="nofollow" onclick="openTwitterLink();">
+            <img src="images/twitter.png" alt="Share on Twitter" width="120" height="46">
+          </a>
+        </li>
+        <li>
+          <a href="#" rel="nofollow" onclick="openFacebookLink();">
+            <img src="images/facebook.png" alt="Share on Facebook" class="share-fb" width="120" height="46">
+          </a>
+        </li>
+<!--         <li>
+          <a href="whatsapp://send" data-text="Check out this VICE Magazine Headline Generator:" data-href="http://vice.ddly.co" class="wa_btn wa_btn_m" style="display:none" onclick="trackOutboundLink('#wa'); return false;">WhatsApp</a><script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="//whatsapp-sharing.com/button";h.appendChild(s);}</script>
+        </li>
+ -->      </ul>
+    </article>
+  </div>
+
+  <!-- Unminified JS is here brah: http://vice.ddly.co/js/vice.js -->
+  <script src="js/min/vice-min.js"></script>
+  <!-- Google Analytics and other on-page JS -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-30720361-5', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script>
+    // Enable Fastclick
+    window.addEventListener('load', function() { FastClick.attach(document.body); }, false);
+    // Utility to wrap different GA behaviors between W3C-compliant browsers and IE when adding event handlers
+    function addListener(element, type, callback) {
+      if (element.addEventListener) element.addEventListener(type, callback);
+      else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+    // Tracking main button clicks https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+    var buttonClick = document.getElementById('btn');
+    addListener(buttonClick, 'click', function () {
+      ga('send', 'event', 'button', 'click', 'headline-generator');
+    });
+    // Tracking outbound link events https://support.google.com/analytics/answer/1136920?hl=en-GB
+    var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+        function () {
+          document.location = url;
+        }
+      });
+    };
+   // Sharing links
+   function openTwitterLink() {
+    var msg = document.getElementById("headline").textContent;
+    var url='https://twitter.com/share?url=http%3A%2F%2Fvice.ddly.co&amp;text='+msg+';related=deadlydizzle&amp;via=DeadlyDizzle';
+    window.open(url);
+      // Use GA to track the link, using a hash to keep on the current page
+      trackOutboundLink('#tw');
+      return false;
+    }
+    function openFacebookLink() {
+      var url='https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fvice.ddly.co';
+      window.open(url);
+      // More GA link tracking
+      trackOutboundLink('#fb');
+      return false;
+    }
+    </script>
+  </body>
+  </html>
